@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer App</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="pomodoro">
+            <div class="progress-container" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <span id="timer">00:00</span>
+            <div class="controls">
+                <div>
+                    <label for="minutes">Minutes:</label>
+                    <input type="number" id="minutes" name="minutes" required min="1" max="99999">
+
+                    <label for="seconds">Seconds:</label>
+                    <input type="number" id="seconds" name="seconds" required min="1" max="99999">
+                </div>
+                <button id="start">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
